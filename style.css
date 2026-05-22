@@ -1,0 +1,289 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #2e7d32; /* Verde Agro */
+    --secondary-color: #81c784; /* Verde Claro */
+    --dark-color: #1b5e20; /* Verde Escuro */
+    --light-bg: #f4f9f4; /* Fundo Leve */
+    --text-color: #333;
+}
+
+body {
+    color: var(--text-color);
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: var(--secondary-color);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--dark-color);
+}
+
+/* Seção Pilares */
+.pilares {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: var(--light-bg);
+}
+
+.pilares h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Seção Calculadora */
+.calculadora {
+    padding: 80px 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.calc-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid var(--primary-color);
+}
+
+.calc-container h2 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin: 25px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-group button:hover {
+    background-color: var(--dark-color);
+}
+
+.resultado {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.resultado h3 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.resultado p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.resultado span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 80px 8%;
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+}
+
+.contato h2 {
+    margin-bottom: 30px;
+}
+
+#form-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-contato input, #form-contato textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Animação Simples */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; }
+    nav ul { padding: 0; }
+    .hero-content h1 { font-size: 32px; }
+    .form-group input { width: 100%; margin-bottom: 10px; }
+}

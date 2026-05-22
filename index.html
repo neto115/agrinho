@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte | Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i> Agro<span>Forte</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#calculadora">Simulador</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero (Banner Principal) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>O Futuro da Agricultura é <span>Sustentável</span></h1>
+            <p>Unindo tecnologia de ponta, preservação ambiental e alta produtividade para alimentar o amanhã.</p>
+            <a href="#pilares" class="btn">Conheça Nossa Visão</a>
+        </div>
+    </section>
+
+    <!-- Seção Pilares (Cards) -->
+    <section id="pilares" class="pilares">
+        <h2>Nossos Pilares</h2>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fa-solid fa-drone-camera"></i>
+                <h3>Tecnologia Agro</h3>
+                <p>Uso de drones, IoT e sensores para monitoramento preciso das lavouras, reduzindo o desperdício.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-droplet"></i>
+                <h3>Gestão Hídrica</h3>
+                <p>Sistemas inteligentes de irrigação que economizam água e preservam os lençóis freáticos.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Solo Vivo</h3>
+                <p>Práticas de rotação de culturas e adubação orgânica para manter a terra fértil por gerações.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Interativa (Calculadora/Simulador em JS) -->
+    <section id="calculadora" class="calculadora">
+        <div class="calc-container">
+            <h2>Simulador de Impacto Sustentável</h2>
+            <p>Insira o tamanho da sua propriedade para estimar a economia de água potencial com tecnologia AgroForte.</p>
+            
+            <div class="form-group">
+                <label for="hectares">Tamanho da propriedade (em Hectares):</label>
+                <input type="number" id="hectares" placeholder="Ex: 50" min="1">
+                <button id="btn-calcular">Calcular Impacto</button>
+            </div>
+
+            <div id="resultado" class="resultado hidden">
+                <h3>Estimativa de Economia Anual:</h3>
+                <p id="economia-agua"><i class="fa-solid fa-faucet-drip"></i> <span>0</span> Litros de água salvos.</p>
+                <p id="economia-co2"><i class="fa-solid fa-cloud"></i> <span>0</span> kg de CO₂ evitados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+        <h2>Junte-se à Revolução Verde</h2>
+        <form id="form-contato">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Como podemos ajudar o seu negócio?" rows="4" required></textarea>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 AgroForte. Cultivando um futuro sustentável.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
